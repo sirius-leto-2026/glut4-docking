@@ -1,0 +1,2 @@
+'класс'
+name_ru": "флоризин", "name_en": "phlorizin", "pubchem_cid": 6072, "smiles": "O=C(CCc1ccc(O)cc1)c1c(O)cc(OC2OC(CO)C(O)C(O)C2O)cc1O", "formula": "", "class": "гликозид", "source": "PubChem", "basis": "классический ингибитор транспорта глюкозы", "status": "есть экспериментальные данные", "role": "candidate", "smiles_checked": "нет", "pc_formula": "C21H24O10", "pc_mw": 436.4, "pc_xlogp": 1.2, "pc_tps

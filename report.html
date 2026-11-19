@@ -1,0 +1,36 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8">
+<title>Отчёт о скрининге — GLUT4</title><style>
+body{font-family:"Segoe UI",Arial,sans-serif;color:#1b2130;max-width:980px;margin:28px auto;padding:0 18px;line-height:1.45}
+h1{color:#3f2a78;border-bottom:4px solid #0f8a86;padding-bottom:7px}
+h2{color:#3f2a78;margin-top:26px}
+table{border-collapse:collapse;width:100%;font-size:14px;margin:8px 0 16px}
+th{background:#0f8a86;color:#fff;text-align:left;padding:6px 8px}
+td{border-bottom:1px solid #d7e3e2;padding:5px 8px}
+img{max-width:100%;margin:10px 0}
+.warn{background:#fff4e5;border-left:5px solid #d98324;padding:9px 13px}
+.ok{background:#e5f3f2;border-left:5px solid #0f8a86;padding:9px 13px}
+.muted{color:#5a6170;font-size:13px}
+</style></head><body>
+<h1>Виртуальный скрининг лигандов GLUT4</h1>
+<p class="muted">Проект «Сириус.Лето» · партнёр: СПбПУ Петра Великого ·
+движок: glut4lab · запусков на режим: 3 ·
+дата сборки отчёта: 18.11.2026</p>
+
+<h2>Библиотека соединений</h2><table><tr><td>всего соединений</td><td>35</td></tr><tr><td>контрольных</td><td>1</td></tr><tr><td>кандидатов</td><td>34</td></tr><tr><td>с экспериментальными данными</td><td>19</td></tr><tr><td>без источника</td><td>0</td></tr><tr><td>без обоснования включения</td><td>0</td></tr><tr><td>не разобраны</td><td>0</td></tr><tr><td>в диапазоне 30-50</td><td>True</td></tr><tr><td>масса, мин-макс</td><td>129-480</td></tr><tr><td>тяжёлых атомов, медиана</td><td>20.0</td></tr></table>
+<h2>Контрольный докинг</h2><p>RMSD = 0.485 Å при пороге 2.0 Å — протокол принят. положение воспроизведено, протокол можно применять к библиотеке</p>
+<h2>Проверка гипотезы</h2>
+<div class="ok"><b>rho = 0.661</b> (p = 0.03759),
+порог гипотезы rho &lt; 0,8 — выполняется.<br>
+Лидеров в верхней трети гибкого режима: 2 из 5.<br>
+Средний сдвиг ранга: 1.8 позиции.<br>
+<b>Гипотеза в этой формулировке не подтверждается.</b></div>
+<h3>Устойчивые лидеры</h3><ul><li>даидзеин: ранг 3 → 1</li><li>кверцетин: ранг 4 → 3</li></ul>
+<img src="modes_rank.png" alt="Сравнение рангов двух режимов">
+<h2>Лучшие соединения</h2>
+<img src="top_rigid.png" alt="Лучшие соединения по средней оценке">
+<table><tr><th>№</th><th>Соединение</th><th>Средняя оценка</th><th>Разброс</th><th>Запусков</th></tr><tr><td>1</td><td>цитохалазин B (контроль)</td><td>-11.549</td><td>0.286</td><td>3</td></tr><tr><td>2</td><td>берберин</td><td>-9.318</td><td>0.227</td><td>3</td></tr><tr><td>3</td><td>даидзеин</td><td>-9.315</td><td>0.43</td><td>3</td></tr><tr><td>4</td><td>кверцетин</td><td>-9.218</td><td>0.111</td><td>3</td></tr><tr><td>5</td><td>лютеолин</td><td>-9.124</td><td>0.092</td><td>3</td></tr><tr><td>6</td><td>генистеин</td><td>-9.105</td><td>0.895</td><td>3</td></tr><tr><td>7</td><td>гесперетин</td><td>-9.075</td><td>0.25</td><td>3</td></tr><tr><td>8</td><td>кемпферол</td><td>-9.019</td><td>0.293</td><td>3</td></tr><tr><td>9</td><td>мирицетин</td><td>-9.003</td><td>0.245</td><td>3</td></tr><tr><td>10</td><td>апигенин</td><td>-8.913</td><td>0.537</td><td>3</td></tr><tr><td>11</td><td>(+)-катехин</td><td>-8.84</td><td>0.199</td><td>3</td></tr><tr><td>12</td><td>(-)-эпикатехин</td><td>-8.675</td><td>0.837</td><td>3</td></tr><tr><td>13</td><td>нарингенин</td><td>-8.597</td><td>0.27</td><td>3</td></tr><tr><td>14</td><td>WZB117</td><td>-8.296</td><td>0.245</td><td>3</td></tr><tr><td>15</td><td>дапаглифлозин</td><td>-8.274</td><td>0.784</td><td>3</td></tr></table>
+<h2>Сравнение режимов</h2>
+<table><tr><th>Соединение</th><th>Жёсткий</th><th>Гибкий</th><th>Разница</th><th>Ранг жёсткий</th><th>Ранг гибкий</th></tr><tr><td>цитохалазин B (контроль)</td><td>-11.549</td><td>-15.163</td><td>-3.614</td><td>1</td><td>5</td></tr><tr><td>берберин</td><td>-9.318</td><td>-13.609</td><td>-4.291</td><td>2</td><td>6</td></tr><tr><td>даидзеин</td><td>-9.315</td><td>-16.47</td><td>-7.155</td><td>3</td><td>1</td></tr><tr><td>кверцетин</td><td>-9.218</td><td>-15.391</td><td>-6.173</td><td>4</td><td>3</td></tr><tr><td>лютеолин</td><td>-9.124</td><td>-15.189</td><td>-6.065</td><td>5</td><td>4</td></tr><tr><td>апигенин</td><td>-8.913</td><td>-15.465</td><td>-6.552</td><td>6</td><td>2</td></tr><tr><td>дапаглифлозин</td><td>-8.274</td><td>-12.481</td><td>-4.207</td><td>7</td><td>8</td></tr><tr><td>ресвератрол</td><td>-7.388</td><td>-13.566</td><td>-6.178</td><td>8</td><td>7</td></tr><tr><td>кофейная кислота</td><td>-6.496</td><td>-11.616</td><td>-5.12</td><td>9</td><td>9</td></tr><tr><td>D-глюкоза</td><td>-5.702</td><td>-9.369</td><td>-3.667</td><td>10</td><td>10</td></tr></table>
+<p class="muted">Расчётная оценка связывания не равна биологической активности.
+Соединения из этой таблицы — кандидаты для экспериментальной проверки, а не лекарства.</p>
+</body></html>
